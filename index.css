@@ -1,8 +1,26 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-body {
-  background: #f5f7fb;
-  font-family: sans-serif;
-}
+export const theme = {
+  colors: {
+    primary: '#4F46E5', // Indigo do Figma
+    primaryHover: '#4338CA',
+    background: '#F9FAFB',
+    surface: '#FFFFFF',
+    text: {
+      main: '#111827',
+      secondary: '#6B7280',
+    },
+    status: {
+      activeBg: '#DCFCE7',
+      activeText: '#166534',
+      inactiveBg: '#F3F4F6',
+      inactiveText: '#374151',
+    }
+  },
+  borderRadius: {
+    card: '12px',
+    button: '8px',
+    input: '6px',
+  },
+  shadows: {
+    card: '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
+  }
+} as const; // O "as const" garante que os valores sejam lidos como literais pelo TS
