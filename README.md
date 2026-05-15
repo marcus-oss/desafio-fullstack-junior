@@ -21,6 +21,14 @@ Sistema de gerenciamento de voluntários desenvolvido com React + Vite + TypeScr
 - Filtros
 - Feedbacks
 - Validação
+## Configuração da API
+
+Crie um arquivo `.env`:
+
+```env
+```
+Certifique-se de que a API FastAPI esteja rodando localmente.
+  
 
 ## Rodando projeto
 
