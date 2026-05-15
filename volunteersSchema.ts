@@ -7,3 +7,16 @@ export const volunteerSchema = z.object({
   cargo_pretendido: z.string().min(1),
   disponibilidade: z.string().min(1),
 });
+
+const form = useForm({
+  resolver: zodResolver(volunteerSchema),
+});
+// mensagem de sucess para usuário cadastrado 
+toast.success("Voluntário cadastrado!");
+
+// se o usuário já for cadastrado 
+catch (error: any) {
+  if (error.response?.status === 409) {
+    toast.error("Email já cadastrado");
+  }
+}
