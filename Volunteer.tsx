@@ -13,6 +13,17 @@ export function Volunteers() {
   const navigate = useNavigate();
 
   const queryClient = useQueryClient();
+  
+  export interface Volunteer {
+  id: number;
+  nome: string;
+  email: string;
+  telefone: string;
+  cargo_pretendido: string;
+  disponibilidade: string;
+  status: "ativo" | "inativo";
+  created_at: string;
+  }
 
   async function handleInactive(id: number) {
     try {
