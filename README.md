@@ -27,3 +27,5 @@ Sistema de gerenciamento de voluntários desenvolvido com React + Vite + TypeScr
 ```bash
 npm install
 npm run dev
+```dependencias
+npm install react-router-dom axios @tanstack/react-query react-hook-form zod @hookform/resolvers sonner lucide-react clsx tailwind-merge
